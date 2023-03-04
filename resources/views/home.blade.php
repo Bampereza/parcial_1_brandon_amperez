@@ -1,4 +1,5 @@
 @extends('layout')
+
     <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -65,15 +66,18 @@
             </form>
         </div>
 </nav>
+
+
 @section('title', 'Page Title')
 
 @section('sidebar')
-    <p>Pagina2.</p>
+    @parent
+    <p>Boton de redireccion.</p>
 @endsection
 
 @section('content')
-
-    <a href="{{route('lista-alumnos')}}" class="btn btn-primary"> Links a pagina principal</a>
+    <p>Link para pagina 2</p>
+    <a href="{{route('pagina2')}}" class="btn btn-primary"> Links a pagina 2</a>
     @endsection
 
     </nav>
