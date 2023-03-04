@@ -4,7 +4,7 @@
 </head>
 <body>
 @section('sidebar')
-    Texto de la vista principal
+    Menu principal
 @show
 <div class="container">
     @yield('content')

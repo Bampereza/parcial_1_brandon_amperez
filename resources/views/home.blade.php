@@ -76,7 +76,11 @@
 @endsection
 
 @section('content')
+    <p>Link para pagina 1</p>
+    <a href="{{route('pagina1')}}" class="btn btn-primary"> Links a pagina 1</a>
+    <br>
     <p>Link para pagina 2</p>
+    <br>
     <a href="{{route('pagina2')}}" class="btn btn-primary"> Links a pagina 2</a>
     @endsection
 
